@@ -35,7 +35,7 @@ export function emailSignIn(body, endpointKey) {
 
     dispatch(storeCurrentEndpointKey(currentEndpointKey));
     dispatch(emailSignInStart(currentEndpointKey));
-
+    console.log("____________________________________________________________________");
     return fetch(getEmailSignInUrl(currentEndpointKey), {
       headers: {
         "Accept": "application/json",

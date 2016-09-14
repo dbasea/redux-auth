@@ -81,9 +81,13 @@ export function fetchToken({rawEndpoints, cookies, currentLocation}) {
       })
       .then((json) => {
         if (json.success) {
+          console.log("successsuccesssuccesssuccesssuccesssuccesssuccesssuccess");
+          console.log("success");
+          console.log("success");
+          console.log("success");
           return resolve({
             headers: newHeaders,
-            user: json.data,
+            user: json.user,
             mustResetPassword,
             firstTimeLogin,
             currentEndpoint,
